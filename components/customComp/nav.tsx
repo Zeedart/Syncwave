@@ -25,7 +25,7 @@ export default function Nav() {
                         <DropdownMenuGroup>
                             {routes.map((route: Route) => (
                                 <DropdownMenuItem key={route.href} asChild>
-                                    <Link href={route.href}>{route.label}</Link>
+                                    <Link  href={route.href}>{route.label}</Link>
                                 </DropdownMenuItem>
                             ))}
                         </DropdownMenuGroup>
