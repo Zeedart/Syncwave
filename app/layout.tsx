@@ -33,6 +33,7 @@ export default function RootLayout({
       lang="en"
       className={`${syne.variable} ${inter.variable} h-full antialiased`}
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col">
         <Providers>
