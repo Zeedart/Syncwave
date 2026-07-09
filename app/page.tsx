@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <div className="w-[90%] my-0 mx-auto lg:w-full h-fit mt-20 lg:h-screen flex justify-center items-center flex-col gap-10">
         <div className="w-50 lg:w-40 p-1 rounded-full bg-(--bg-card) border border-(--line) justify-center gap-3 items-center flex">
-          <BlinkingDot width={10} height={10} />
+          <BlinkingDot width={10} height={10} color="bg-green-500"/>
           <p className="text-sm text-(--text-muted)">Always in sync</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-2">
