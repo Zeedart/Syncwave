@@ -8,14 +8,14 @@ export default function Dashboard() {
         <div className="w-[90%] mt-10 mx-auto h-fit lg:h-fit mb-30 flex flex-col gap-2">
             <h3>Your Sync</h3>
             <p className="text-sm text-(--text-muted)">3 pairs running · last synced 4 min ago</p>
-            <div className="mt-4 grid grid-cols-1 gap-3 justify-items-center lg:grid-cols-4">
+            <div className="mt-4 grid sm:grid-cols-2 gap-3 md:grid-cols-4">
                 <DataCard title="Total Songs Synced" data={46} />
                 <DataCard title="Total Playlists Synced" data={8} />
                 <DataCard title="Total Albums Synced" data={3} />
                 <DataCard title="Total Artists Synced" data={12} />
             </div>
             <h4 className="my-5">Sync Pairs</h4>
-            <div className="grid grid-cols-1 gap-3 justify-items-center lg:grid-rows-4">
+            <div className="grid grid-cols-1 gap-3 justify-items-center lg:grid-rows-4 mb-10">
                 <SyncPairCard ytPlaylistTitle="My YouTube Playlist" spotifyPlaylistTitle="My Spotify Playlist" totalSongs={46} />
                 <SyncPairCard ytPlaylistTitle="My YouTube Playlist" spotifyPlaylistTitle="My Spotify Playlist" totalSongs={46} />
                 <SyncPairCard ytPlaylistTitle="My YouTube Playlist" spotifyPlaylistTitle="My Spotify Playlist" totalSongs={46} />
