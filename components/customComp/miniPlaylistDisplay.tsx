@@ -27,9 +27,9 @@ export default function MiniPlaylistDisplay() {
       />
 
       {/* Custom radio circle – changes only when checked */}
-      <div className="relative h-5 w-5 shrink-0 self-center rounded-full border-2 border-(--text-muted) transition-all duration-200 group-has-[:checked]:border-(--syncwave) group-has-[:checked]:bg-(--syncwave)">
+      <div className="relative h-5 w-5 shrink-0 self-center rounded-full border-2 border-(--text-muted) transition-all duration-200 group-has-checked:border-(--syncwave) group-has-checked:bg-(--syncwave)">
         {/* Inner dot – visible only when checked */}
-        <div className="absolute inset-0 m-auto h-2 w-2 rounded-full bg-white opacity-0 transition-opacity group-has-[:checked]:opacity-100" />
+        <div className="absolute inset-0 m-auto h-2 w-2 rounded-full bg-white opacity-0 transition-opacity group-has-checked:opacity-100" />
       </div>
     </label>
   );
