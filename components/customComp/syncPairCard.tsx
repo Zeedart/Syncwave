@@ -6,7 +6,7 @@ import {useRouter} from "next/navigation"
 export default function SyncPairCard({ ytPlaylistTitle, spotifyPlaylistTitle, totalSongs }: { ytPlaylistTitle: string; spotifyPlaylistTitle: string; totalSongs: number }) {
     const router = useRouter();
     return (
-        <div onClick={() => router.push('/Dashboard/SyncScreen/21')} className="w-full p-5 border-2 border-(--line) hover:cursor-pointer hover:border-(--syncwave) flex-col gap-3.5 rounded-2xl bg-(--bg-card) h-fit flex transition-all duration-300 ease-in-out hover:scale-[1.01]">
+        <div onClick={() => router.push('/Dashboard/SyncScreen/1')} className="w-full p-5 border-2 border-(--line) hover:cursor-pointer hover:border-(--syncwave) flex-col gap-3.5 rounded-2xl bg-(--bg-card) h-fit flex transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div className="flex justify-start gap-2">
                 <div className={`w-10 h-10 lg:max-w-15 lg:max-h-15 lg:min-h-10 rounded-lg bg-(--bg-youtube) flex justify-center items-center`}>
                     <span className="text-(--youtube)">YT</span>
