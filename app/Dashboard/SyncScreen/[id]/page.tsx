@@ -11,7 +11,7 @@ export default function SyncScreen() {
     const router = useRouter()
 
     return (
-        <div className="w-[95%] mt-10 mx-auto h-fit lg:h-fit flex flex-col gap-5">
+        <div className="w-[95%] mt-10 mb-30 mx-auto h-fit lg:h-fit flex flex-col gap-5">
             <button 
                 className="p-3 hover:cursor-pointer w-fit flex items-center gap-2 bg-(--bg-surface)  border-2 border-(--line) text-(--text) hover:bg-(--bg-card) rounded-xl transition-colors"
                 onClick={() => router.back()}
@@ -30,11 +30,11 @@ export default function SyncScreen() {
                     <p className="text-sm text-(--text-muted) self-center w-fit">Missing from other side</p>
                 </div>
             </div>
-            <div className="flex gap-5 w-fit self-center">
+            <div className="flex flex-col lg:flex-row gap-5 w-fit self-center">
                 <PlaylistDisplay /> 
                 <div className="flex flex-col justify-center items-center gap-2">
                     <div className="h-[20%] border-l border-(--line-hover)"></div>
-                    <ArrowsLeftRightIcon size={22} weight="fill" color="#7C5CFC" className="self-center" />
+                    <ArrowsLeftRightIcon size={22} weight="fill" color="#7C5CFC" className="self-center rotate-90 lg:rotate-0" />
                     <div className="h-[20%] border-l rounded-2xl border-(--line-hover)"></div>
                 </div>
                 <PlaylistDisplay />
@@ -42,7 +42,7 @@ export default function SyncScreen() {
             
             <button className="w-fit bg-(--bg-surface) self-center border-2 font-syne font-bold text-lg px-5 border-(--line) mt-2.5 rounded-lg hover:bg-(--bg-card) flex items-center justify-center p-3">Start sync</button>
 
-            <div className="w-xl lg:w-6xl self-center p-5 bg-(--bg-surface) gap-4 flex-col flex border-2 border-(--line) rounded-2xl">
+            <div className="sm:w-xl lg:w-4xl max-w-4xl self-center p-5 bg-(--bg-surface) gap-4 flex-col flex border-2 border-(--line) rounded-2xl">
                 <h6>Sync Settings</h6>
                 <div className="flex justify-between">
                     <div>

@@ -15,12 +15,12 @@ export default function Dashboard() {
                 <DataCard title="Total Artists Synced" data={12} />
             </div>
             <h4 className="my-5">Sync Pairs</h4>
-            <div className="grid grid-cols-1 gap-3 justify-items-center lg:grid-rows-4 mb-10">
+            <div className="grid grid-cols-1 gap-3 justify-items-center lg:grid-rows-4">
                 <SyncPairCard ytPlaylistTitle="My YouTube Playlist" spotifyPlaylistTitle="My Spotify Playlist" totalSongs={46} />
                 <SyncPairCard ytPlaylistTitle="My YouTube Playlist" spotifyPlaylistTitle="My Spotify Playlist" totalSongs={46} />
                 <SyncPairCard ytPlaylistTitle="My YouTube Playlist" spotifyPlaylistTitle="My Spotify Playlist" totalSongs={46} />
             </div>
-            <div className="bg-(--bg-card) rounded-2xl border border-(--text-destructive) h-fit ">
+            <div className="bg-(--bg-surface) rounded-2xl border border-(--text-destructive) h-fit ">
                 <div className="flex p-5 justify-between">
                     <h4>Failed songs</h4>
                     <div className="flex gap-1 bg-(--bg-destructive) p-2 rounded-lg">

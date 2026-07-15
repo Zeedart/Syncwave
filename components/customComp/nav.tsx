@@ -28,11 +28,11 @@ export default function Nav() {
 
     return (
         <nav className="flex justify-between items-center p-3 align-center text-(--text) border-b border-(--line)">
-            <div className="flex flex-row ml-3 items-center gap-2">
+            <Link href="/" className="flex flex-row ml-3 items-center gap-2">
                 <div className="bg-(--syncwave) font-syne text-white rounded-md items-center font-white flex justify-center w-8 h-8 font-[1000]">S</div>
                 <span className="font-semibold font-syne ">Syncwave</span>
                 <p className="text-sm hidden lg:flex place-content-center-safe font-syne text-(--syncwave)"><span className="font-bold mr-1.5">/</span> {trimmedPathname}</p>
-            </div>
+            </Link>
             <div className="gap-2 flex mr-4 flex-row items-center">
                 <button className="mode-btn" id="modeBtn" title="Toggle dark/light mode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
                     {theme === "dark" ? "☀️" : "🌙"}

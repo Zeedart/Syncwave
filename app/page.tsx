@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="w-[90%] my-0 mx-auto lg:w-full h-fit mt-20 lg:h-screen flex justify-center items-center flex-col gap-10">
-        <div className="w-50 lg:w-40 p-1 rounded-full bg-(--bg-card) border border-(--line) justify-center gap-3 items-center flex">
+        <div className="w-50 lg:w-40 p-1 rounded-full bg-(--bg-surface) border border-(--line) justify-center gap-3 items-center flex">
           <BlinkingDot width={10} height={10} color="bg-green-500"/>
           <p className="text-sm text-(--text-muted)">Always in sync</p>
         </div>
@@ -23,7 +23,7 @@ export default function Home() {
             Add a song on YouTube, it appears on Spotify. Add it on Spotify, it appears on YouTube. Every 5 minutes, automatically.
           </p>
         </div>
-        <button className="bg-(--bg-card) hover:text-white border-2 border-(--line)  text-(--text) hover:bg-(--syncwave-hover) py-2 px-4 rounded-xl transition-colors">
+        <button className="bg-(--bg-surface) hover:text-white border-2 border-(--line)  text-(--text) hover:bg-(--syncwave-hover) py-2 px-4 rounded-xl transition-colors">
           Get Started 🚀
         </button>
         <div className="w-full lg:w-[80%]  flex lg:flex-row flex-col gap-5 lg:mt-3 justify-center items-center">

@@ -31,7 +31,7 @@ export default function SelectPlaylist() {
           <MiniPlaylistDisplay />
         </div>
       </div>
-      <button className="p-4 w-fit self-center hover:text-white border-2 border-(--line) text-(--text) hover:bg-(--syncwave-hover) rounded-xl transition-colors">
+      <button className="p-4 w-fit self-center bg-(--bg-surface) hover:text-white border-2 border-(--line) text-(--text) hover:bg-(--syncwave-hover) rounded-xl transition-colors">
         Preview and sync →
       </button>
     </div>

@@ -3,7 +3,7 @@ import pic from "@/public/221620.jpg";
 
 export default function MiniPlaylistDisplay() {
   return (
-    <label className="group flex mb-3 cursor-pointer items-center justify-between rounded-2xl border-2 border-(--line) bg-(--bg-card) p-4 transition-all duration-200 has-checked:border-(--syncwave) has-checked:bg-(--syncwave)/10">
+    <label className="group flex mb-3 cursor-pointer items-center justify-between rounded-2xl border-2 border-(--line) bg-(--bg-surface) p-4 transition-all duration-200 has-checked:border-(--syncwave) has-checked:bg-(--syncwave)/10">
       {/* Left: cover + info */}
       <div className="flex items-center gap-3">
         <Image
