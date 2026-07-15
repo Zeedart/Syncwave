@@ -4,6 +4,8 @@ import { useRouter } from "next/navigation"
 import BlinkingDot from "@/components/customComp/blinkingDot"
 import PlaylistDisplay from "@/components/customComp/playlistDisplay"
 import { ArrowsLeftRightIcon  } from "@phosphor-icons/react"
+import { Switch } from "@/components/ui/switch"
+
 
 export default function SyncScreen() {
     const router = useRouter()
@@ -11,7 +13,7 @@ export default function SyncScreen() {
     return (
         <div className="w-[95%] mt-10 mx-auto h-fit lg:h-fit flex flex-col gap-5">
             <button 
-                className="p-3 hover:cursor-pointer w-fit flex items-center gap-2  border-2 border-(--line) text-(--text) hover:bg-(--bg-card) rounded-xl transition-colors"
+                className="p-3 hover:cursor-pointer w-fit flex items-center gap-2 bg-(--bg-surface)  border-2 border-(--line) text-(--text) hover:bg-(--bg-card) rounded-xl transition-colors"
                 onClick={() => router.back()}
                 
             >
@@ -38,6 +40,26 @@ export default function SyncScreen() {
                 <PlaylistDisplay />
             </div>
             
+            <button className="w-fit bg-(--bg-surface) self-center border-2 font-syne font-bold text-lg px-5 border-(--line) mt-2.5 rounded-lg hover:bg-(--bg-card) flex items-center justify-center p-3">Start sync</button>
+
+            <div className="w-xl lg:w-6xl self-center p-5 bg-(--bg-surface) gap-4 flex-col flex border-2 border-(--line) rounded-2xl">
+                <h6>Sync Settings</h6>
+                <div className="flex justify-between">
+                    <div>
+                        <p className="text-md">Sync deletions</p>
+                        <p className="text-sm text-(--text-muted)">Remove from one side, remove from the other</p>
+                    </div>
+                    <Switch className="border-2" />
+                </div>
+                <hr className="border-(--line)"></hr>
+                <div className="flex justify-between">
+                    <div>
+                        <p className="text-md">Auto sync</p>
+                        <p className="text-sm text-(--text-muted)">Check for changes every 5 minutes</p>
+                    </div>
+                    <Switch className="border-2" />
+                </div>
+            </div>
         </div>
     )
 }

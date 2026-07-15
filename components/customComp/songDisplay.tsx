@@ -4,7 +4,7 @@ import BlinkingDot from "./blinkingDot";
 
 export default function SongDisplay() {
     return (
-        <div className="w-full mx-auto h-fit flex mt-4  items-center">
+        <div className="w-full mx-auto h-fit flex my-4  items-center">
             <div className="w-fit flex items-center gap-2">
                 <p className="text-md text-(--text-muted) ml-6 mr-3 w-fit">1</p>
                 <Image
